@@ -1,0 +1,157 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --color: #99bbff;
+   --color1: #75511c;
+  --color2: #000;
+  --color3: #ffa500;
+  --font: #8b949e;
+ 
+}
+
+body {
+  --gold: #FAC57D;
+  --snow: #F0F4F7;
+  color: var(--font);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(img/snow.jpg) no-repeat;
+  background-size: cover;
+  font-family: 'Amatic SC', cursive;
+}
+.h1 {
+ margin-top: 0;
+ margin-bottom: 50px;
+ border-bottom: 4px dashed;
+}
+.main-container {
+  background: rgba(255,255,255,0.7);
+  padding: 40px;
+  position: relative;
+}
+
+.controls {
+  order: -1;
+  padding: 20px;
+}
+.hat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 14%;
+  left: 47%;
+  transform: translateX(-50%);
+}
+.top,
+.brim {
+  background: brown;
+}
+.top {
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+  width: 70px;
+  height: 30px;
+  background: black;
+}
+.brim {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  width: 170px;
+  height: 10px;
+  background: black;
+}
+
+.hat > * {
+  background: var(--color1);
+}
+
+input,
+.head,
+.snowman-body,
+.button,
+.hat > * {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;  
+}
+
+body,
+.snowman-body,
+.eyes {
+    display: flex;
+}
+
+input {
+  margin: 0.25em; 
+  border: none;
+  cursor: pointer;
+}
+label {
+    font-size: 30px;
+    color: var(--font);
+}
+
+.head {
+  margin-left: 30px;
+  background: var(--snow);
+  height: 10em;
+  width: 10em;
+  border-radius: 50%;
+}
+
+.snowman-body {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  margin-top: -18px;
+  background: var(--snow);
+  height: 14em;
+  width: 14em;
+  border-radius: 50%;
+}
+
+.button {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: var(--color2);
+}
+
+.eye {
+  border-top-left-radius: 75px;
+  border-top-right-radius: 75px;
+  height: 1em;
+  width: 1em;
+  background: var(--color);
+  margin: 2.2em 2em 0;
+}
+
+.pupil {
+  border-top-left-radius: 75px;
+  border-top-right-radius: 75px;
+  height: 0.5em;
+  width: 0.5em;
+  background: black;
+  margin: 0.5em 0.25em;
+}
+
+.nose {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 40px;
+  border-color: transparent transparent transparent var(--color3);
+  margin: 2em 4.4em;  
+}
+
+.mouth {
+  height: 0.25em;
+  width: 2em;
+  background: darkgray;
+  border-radius: 50%;
+  margin: 2em 4em;
+}
